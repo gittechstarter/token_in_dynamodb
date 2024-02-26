@@ -58,3 +58,59 @@ def lambda_handler(event, context):
         'statusCode': statusCode,
         'body': json.dumps(responseBody)
     }
+
+# DynamoDB item
+# {
+#  "userID": "1000",
+#  "objID": "1",
+#  "keyResults": [
+#   {
+#    "description": "learn python",
+#    "idDone": false,
+#    "number": 1,
+#    "progress": 80
+#   },
+#   {
+#    "description": "learn js",
+#    "isDone": false,
+#    "number": 2,
+#    "progress": 10
+#   }
+#  ]
+# }
+# {
+#  "userID": "1000",
+#  "objID": "2",
+#  "keyResults": [
+#   {
+#    "description": "learn python",
+#    "idDone": false,
+#    "number": 1,
+#    "progress": 80
+#   },
+#   {
+#    "description": "learn nodejs",
+#    "isDone": false,
+#    "number": 2,
+#    "progress": 10
+#   }
+#  ]
+# }
+# {
+#  "userID": "1001",
+#  "objID": "1",
+#  "keyResults": [
+#   {
+#    "description": "learn scrum",
+#    "idDone": false,
+#    "number": 1,
+#    "progress": 80
+#   },
+#   {
+#    "description": "learn js",
+#    "isDone": false,
+#    "number": 2,
+#    "progress": 10
+#   }
+#  ]
+# }
